@@ -1,1 +1,0 @@
-var json_points_10 = {"type":"FeatureCollection","name":"points_10","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[]}
