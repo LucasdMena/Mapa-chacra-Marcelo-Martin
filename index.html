@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +21,43 @@
             margin: 0;
         }
         </style>
-        <title></title>
+        <title>Proyecto de Feedlot — Martín Agro</title>
+
+        <style>
+        :root { --header-height: 76px; }
+        body { font-family: Arial, sans-serif; }
+        #encabezado-proyecto {
+            position: absolute; top: 0; left: 0; right: 0;
+            height: var(--header-height); box-sizing: border-box;
+            display: flex; align-items: center; padding: 12px 20px;
+            background: #fff; border-bottom: 3px solid #456b45;
+            z-index: 1100; box-shadow: 0 2px 7px rgba(0,0,0,.12);
+        }
+        #encabezado-proyecto h1 {
+            margin: 0 0 5px; font-size: 21px; line-height: 1.2; color: #315331;
+        }
+        #encabezado-proyecto p {
+            margin: 0; font-size: 12px; line-height: 1.35; color: #5b635b;
+        }
+        #map {
+            position: absolute; top: var(--header-height); left: 0;
+            width: 100%; height: calc(100% - var(--header-height));
+        }
+        @media (max-width: 600px) {
+            :root { --header-height: 80px; }
+            #encabezado-proyecto { padding: 10px 12px; }
+            #encabezado-proyecto h1 { font-size: 17px; }
+            #encabezado-proyecto p { font-size: 11px; }
+        }
+        </style>
     </head>
     <body>
+        <header id="encabezado-proyecto">
+            <div>
+                <h1>Proyecto de Feedlot — Martín Agro</h1>
+                <p>Chacra de Marcelo Martín · Río Colorado, Río Negro</p>
+            </div>
+        </header>
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
